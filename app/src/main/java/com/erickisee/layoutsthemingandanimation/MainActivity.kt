@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import com.erickisee.layoutsthemingandanimation.ui.theme.LayoutsThemingAndAnimationTheme
 
@@ -39,8 +40,9 @@ fun AndroidAlien(
 ){
     Image(
         modifier=modifier,
-        pointer = pointerResource(R.drawable.android_alien),
-        colorFilter = ColorFilter.tint(color = color)
+        painter = painterResource(R.drawable.ic_launcher_foreground),
+        colorFilter = ColorFilter.tint(color = color),
+        contentDescription=""
     )
 }
 
